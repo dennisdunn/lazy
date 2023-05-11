@@ -1,5 +1,4 @@
 # lazy
-### _Dennis Dunn <ansofive@gmail.com>_
 
 Lazy evaluation primatives pulled from text books.
 
