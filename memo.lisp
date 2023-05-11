@@ -1,0 +1,10 @@
+(in-package #:lazy)
+
+(defun memoize (symbol)
+  (let ((original-function (symbol-function symbol))
+        (values (make-hash-table :test #'equal)))
+    (setf (symbol-function symbol)
+      (lambda (&rest args)
+        (or (gethash args values)
+            (setf (gethash args values)
+              (apply original-function args)))))))
