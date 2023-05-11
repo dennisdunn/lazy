@@ -3,6 +3,10 @@
 
 Lazy evaluation primatives pulled from text books.
 
+- (lazy body)
+- (force lazy-fn)
+- (memoize symbol)
+
 ## License
 
 MIT
